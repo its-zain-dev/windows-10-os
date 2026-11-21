@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://its-zain-dev.github.io/windows-10-os/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://its-zain-dev.github.io/windows-10-os/assets/hero-dark.jpg</image:loc>
+      <image:title>Windows 10 Web OS Dark Hero Desktop Wallpaper</image:title>
+      <image:caption>Interactive Windows 10 online desktop simulator featuring the classic Hero wallpaper</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://its-zain-dev.github.io/windows-10-os/assets/hero-light.jpg</image:loc>
+      <image:title>Windows 10 Light Theme (1903) Hero Wallpaper</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://its-zain-dev.github.io/windows-10-os/assets/lock-cave.jpg</image:loc>
+      <image:title>Windows 10 Spotlight Lock Screen</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://its-zain-dev.github.io/windows-10-os/assets/wallpaper-alpine.jpg</image:loc>
+      <image:title>Windows 10 Alpine Sunrise Spotlight Wallpaper</image:title>
+    </image:image>
+  </url>
+</urlset>

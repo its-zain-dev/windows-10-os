@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" data-win-theme="dark" data-app-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Windows 10 Online — Free Interactive Windows 10 OS Simulator in Browser</title>
+  <meta name="title" content="Windows 10 Online — Free Interactive Windows 10 OS Simulator in Browser" />
+  <meta name="description" content="Try Windows 10 free in your browser — 100% faithful desktop UI with Start Menu, Live Tiles, Aero Snap, Virtual Desktops, File Explorer, CMD, Settings &amp; more." />
+  <meta name="keywords" content="Windows 10 online, Windows 10 simulator, try Windows 10 in browser, Windows 10 web OS, Windows 10 desktop UI, browser operating system, HTML CSS JS Windows 10, Fluent Design desktop, virtual Windows 10, Aero Snap web" />
+  <meta name="author" content="its-zain-dev" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="application-name" content="Windows 10 Web OS" />
+  <meta name="theme-color" content="#0078D7" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Windows 10" />
+  <link rel="canonical" href="https://its-zain-dev.github.io/windows-10-os/" />
+
+  <!-- Icons & PWA Manifest -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Open Graph / Facebook / LinkedIn / Discord -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Windows 10 Web OS" />
+  <meta property="og:url" content="https://its-zain-dev.github.io/windows-10-os/" />
+  <meta property="og:title" content="Windows 10 Online — Interactive Windows 10 Desktop OS in Your Browser" />
+  <meta property="og:description" content="Boot into a 100% faithful Windows 10 desktop directly in your browser. Start Menu, Live Tiles, Aero Snap, Virtual Desktops, Action Center, File Explorer, Edge, CMD, Paint, Settings &amp; Minesweeper — zero install." />
+  <meta property="og:image" content="https://its-zain-dev.github.io/windows-10-os/assets/hero-dark.jpg" />
+  <meta property="og:image:secure_url" content="https://its-zain-dev.github.io/windows-10-os/assets/hero-dark.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1376" />
+  <meta property="og:image:height" content="768" />
+  <meta property="og:image:alt" content="Windows 10 Online Simulator featuring the classic dark blue Hero glass wallpaper" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://its-zain-dev.github.io/windows-10-os/" />
+  <meta name="twitter:title" content="Windows 10 Online — Interactive Windows 10 Desktop OS in Your Browser" />
+  <meta name="twitter:description" content="Try a full interactive Windows 10 desktop right in your browser with Start Menu, Live Tiles, Aero Snap, Virtual Desktops, File Explorer, CMD, Settings, Paint &amp; more." />
+  <meta name="twitter:image" content="https://its-zain-dev.github.io/windows-10-os/assets/hero-dark.jpg" />
+  <meta name="twitter:image:alt" content="Windows 10 Online Web OS preview" />
+
+  <!-- Core Web Vitals Preloads -->
+  <link rel="preload" as="image" href="assets/lock-cave.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/hero-dark.jpg" />
+
+  <!-- Structured Data (JSON-LD: WebApplication + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Windows 10 Online — Web OS Simulator",
+        "alternateName": ["Windows 10 Web OS", "Windows 10 Browser Simulator"],
+        "url": "https://its-zain-dev.github.io/windows-10-os/",
+        "description": "A 100% faithful interactive Windows 10 desktop operating system replica built with pure HTML5, CSS3, and Vanilla ES Modules. Experience the Windows 10 boot, lock screen, Start Menu with Live Tiles, 40px Taskbar, Aero Snap, Virtual Desktops, Action Center, persistent Virtual File System, and 10 working built-in apps directly in your browser.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (Web Browser)",
+        "browserRequirements": "Requires JavaScript enabled in a modern browser (Chrome, Edge, Firefox, Safari).",
+        "softwareVersion": "10.0.19045",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "image": "https://its-zain-dev.github.io/windows-10-os/assets/hero-dark.jpg",
+        "screenshot": [
+          "https://its-zain-dev.github.io/windows-10-os/assets/hero-dark.jpg",
+          "https://its-zain-dev.github.io/windows-10-os/assets/hero-light.jpg",
+          "https://its-zain-dev.github.io/windows-10-os/assets/lock-cave.jpg",
+          "https://its-zain-dev.github.io/windows-10-os/assets/wallpaper-alpine.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "its-zain-dev",
+          "url": "https://github.com/its-zain-dev"
+        },
+        "codeRepository": "https://github.com/its-zain-dev/windows-10-os",
+        "programmingLanguage": ["HTML5", "CSS3", "JavaScript"],
+        "featureList": [
+          "Authentic Windows 10 Boot, Lock Screen, Sign-In, Power & BSOD screens",
+          "3-Column Start Menu with Live Tiles, A-Z app jump, and acrylic transparency",
+          "40px Taskbar with live hover previews, jump lists, search box, and 6 system tray flyouts",
+          "Full Window Manager with 8-way resize, Aero Snap (halves & quadrants), Task View & Virtual Desktops",
+          "Dark & Light Windows/App modes with 32 official accent colors, Night Light & brightness controls",
+          "Persistent localStorage Virtual File System (C: drive + Recycle Bin)",
+          "10 built-in apps: File Explorer, Settings, Notepad, Calculator, Microsoft Edge, Command Prompt, Task Manager, Paint, Photos, and Minesweeper"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I try Windows 10 online in my browser without downloading anything?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Windows 10 Web OS runs 100% client-side in your web browser with zero downloads, plugins, or virtual machines required. Click or press any key on the boot and lock screen to sign into the full desktop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which apps are included in Windows 10 Web OS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It includes 10 functional Windows 10 core apps: File Explorer, Settings, Notepad, Fluent Calculator (Standard & Scientific), Microsoft Edge, Command Prompt (cmd.exe), Task Manager with live performance graphs, Classic Paint, Photos viewer, and Minesweeper."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Windows 10 Web OS save my files and personalization settings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Your Virtual File System (Desktop, Documents, Pictures, Recycle Bin), Notepad notes, Paint drawings, accent color, dark/light theme, and wallpaper choices persist automatically in browser localStorage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What keyboard shortcuts work in this Windows 10 simulator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use Alt+R for Run Dialog, Alt+E for File Explorer, Alt+I for Settings, Alt+D for Show Desktop, Alt+L to Lock, Alt+X for the Power User Win+X menu, Alt+Tab to switch windows, Ctrl+Shift+Esc for Task Manager, and F2/Delete/Enter on Desktop icons."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/shell.css" />
+  <link rel="stylesheet" href="css/windows.css" />
+  <link rel="stylesheet" href="css/apps.css" />
+</head>
+<body>
+  <!-- Semantic SEO & Screen-Reader Overview (Visually Hidden — Preserves 100% Authentic Win10 UI) -->
+  <main class="sr-only" aria-label="About Windows 10 Online Web OS">
+    <h1>Windows 10 Online — Interactive Windows 10 Desktop OS Simulator</h1>
+    <p>Try a faithful Windows 10 operating system directly inside your web browser with zero downloads or installations. Built with pure HTML5, CSS3 Fluent Acrylic design, and Vanilla JavaScript ES Modules.</p>
+    <h2>Included Windows 10 Shell Features</h2>
+    <ul>
+      <li>Boot sequence, Windows Spotlight Lock Screen, Sign-In with optional PIN, Sleep/Restart/Shut down, and classic BSOD simulation.</li>
+      <li>Interactive Desktop with marquee selection, icon drag-and-drop, inline F2 rename, context menus, and Recycle Bin restore.</li>
+      <li>3-Column Start Menu with expandable rail, A–Z app jump list, and customizable Live Tiles.</li>
+      <li>Authentic 40px Taskbar with search box and live math evaluation, Task View with Virtual Desktops, window hover previews, jump lists, Action Center, and 6 system tray flyouts (Calendar, Volume, Network, Battery, Language, Overflow).</li>
+      <li>Full Window Manager featuring sharp 0px Windows 10 corners, 8-way resize, Aero Snap left/right/top/quadrants, Alt+Tab switcher, Win+X menu, Run dialog, and Winver.</li>
+      <li>Dark &amp; Light Windows/App theme modes, 32 official accent colors, live brightness slider, Night Light warm filter, and Web Audio API Windows 10 sound effects.</li>
+    </ul>
+    <h2>10 Built-In Core Apps</h2>
+    <ul>
+      <li>File Explorer — Ribbon UI, This PC storage view, breadcrumb bar, Recycle Bin, and full CRUD on a persistent localStorage Virtual File System.</li>
+      <li>Settings — Personalization (wallpapers, 32 accent colors, light/dark themes, taskbar options), System Display/Sound/About, Network, and Accounts.</li>
+      <li>Notepad — Classic Win32 menus, open/save to Virtual File System, Find &amp; Replace, Word Wrap, and Zoom.</li>
+      <li>Calculator — Fluent UWP Standard &amp; Scientific modes, memory registers, and calculation history.</li>
+      <li>Microsoft Edge — Multi-tab Chromium Edge interface with address bar, bookmarks, and navigation history.</li>
+      <li>Command Prompt (cmd.exe) — Interactive terminal connected to the Virtual File System (dir, cd, mkdir, type, echo, cls, ver, color, help, and more).</li>
+      <li>Task Manager — Live processes list with End Task plus real-time animated CPU, Memory, Disk, and Wi-Fi canvas graphs.</li>
+      <li>Paint — Classic mspaint with pencil, brush sizes, eraser, flood fill, shapes, color picker, undo, and PNG save to Pictures.</li>
+      <li>Photos — Gallery viewer with zoom, rotate, and one-click Set as Desktop Wallpaper.</li>
+      <li>Minesweeper — Classic puzzle game with timer, flagging, and difficulty presets.</li>
+    </ul>
+    <p>Open-source project by <a href="https://github.com/its-zain-dev/windows-10-os">its-zain-dev on GitHub</a>.</p>
+  </main>
+
+  <noscript>
+    <div class="noscript-screen">
+      <h1>Windows 10 Online — JavaScript Required</h1>
+      <p>Please enable JavaScript in your browser to boot into the interactive Windows 10 Web OS desktop with File Explorer, Settings, Edge, Command Prompt, Paint, Calculator, and more.</p>
+    </div>
+  </noscript>
+
+  <!-- Display Filters (Brightness & Night Light) -->
+  <div id="display-brightness-overlay" aria-hidden="true"></div>
+  <div id="display-nightlight-overlay" aria-hidden="true"></div>
+
+  <!-- 1. BOOT SCREEN -->
+  <div id="boot-screen" class="screen-overlay active">
+    <div class="boot-logo">
+      <svg viewBox="0 0 88 88" width="96" height="96" aria-label="Windows 10">
+        <path fill="#00ADEF" d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349l-.011 41.34-47.318-6.678-.066-34.739z"/>
+      </svg>
+    </div>
+    <div class="win10-spinner boot-spinner">
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+    <div class="boot-skip-hint">Click or press any key to continue</div>
+  </div>
+
+  <!-- 2. POWER / SHUTDOWN / RESTART SCREEN -->
+  <div id="power-screen" class="screen-overlay">
+    <div class="power-screen-content">
+      <div class="win10-spinner power-spinner">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+      <div id="power-screen-text" class="power-screen-text">Shutting down</div>
+    </div>
+  </div>
+
+  <!-- 3. BSOD (BLUE SCREEN OF DEATH) -->
+  <div id="bsod-screen" class="screen-overlay">
+    <div class="bsod-inner">
+      <div class="bsod-face">:(</div>
+      <div class="bsod-msg">Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.</div>
+      <div class="bsod-progress"><span id="bsod-pct">0</span>% complete</div>
+      <div class="bsod-details">
+        <div class="bsod-qr" aria-hidden="true">
+          <svg viewBox="0 0 29 29" width="96" height="96">
+            <rect width="29" height="29" fill="#ffffff"/>
+            <path fill="#0078D7" d="M2 2h7v7H2zm1 1v5h5V3zm1 1h3v3H4zm16-2h7v7h-7zm1 1v5h5V3zm1 1h3v3h-3zM2 20h7v7H2zm1 1v5h5v-5zm1 1h3v3H4zm7-20h2v2h-2zm3 0h2v3h-2zm3 1h2v2h-2zm-6 3h3v2h-3zm4 1h3v2h-3zm-5 3h2v3h-2zm3 1h4v2h-4zm5-1h2v3h-2zM2 11h3v2H2zm4 0h3v3H6zm4 1h3v2h-3zm4-1h2v4h-2zm3 1h3v2h-3zm4-1h4v2h-4zm-1 3h5v2h-5zM2 15h4v2H2zm5 0h2v3H7zm4 1h4v2h-4zm5 0h3v3h-3zm5 1h3v2h-3zM11 19h2v4h-2zm3 1h3v2h-3zm4-1h2v3h-2zm3 1h4v2h-4zm-9 3h4v2h-4zm5 0h2v4h-2zm3 1h3v3h-3zm-9 2h3v2h-3zm4 0h2v2h-2z"/>
+          </svg>
+        </div>
+        <div class="bsod-info">
+          <div>For more information about this issue and possible fixes, visit https://www.windows.com/stopcode</div>
+          <div style="margin-top:14px">If you call a support person, give them this info:</div>
+          <div>Stop code: <span id="bsod-code">CRITICAL_PROCESS_DIED</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. LOCK & LOGIN SCREEN -->
+  <div id="lock-container" class="screen-overlay">
+    <div id="login-bg" class="login-bg"></div>
+
+    <!-- Sign-in layer behind Lock curtain -->
+    <div id="login-layer" class="login-layer">
+      <div class="login-center">
+        <div id="login-avatar" class="login-avatar"></div>
+        <div id="login-username" class="login-username">User</div>
+        <div id="login-pin-row" class="login-pin-row hidden">
+          <div class="login-input-wrap">
+            <input type="password" id="login-pin-input" placeholder="PIN" autocomplete="off" />
+            <button id="login-pin-submit" class="login-arrow-btn" title="Submit">→</button>
+          </div>
+          <div id="login-pin-error" class="login-pin-error"></div>
+          <div id="login-pin-hint" class="login-pin-hint"></div>
+        </div>
+        <button id="login-signin-btn" class="login-signin-btn">Sign in</button>
+        <div id="login-welcome" class="login-welcome hidden">
+          <div class="win10-spinner small-spinner">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+          <span>Welcome</span>
+        </div>
+      </div>
+
+      <div class="login-accounts" id="login-accounts">
+        <button class="login-acct-item active" data-acct="User">
+          <span class="acct-mini-avatar"></span>
+          <span class="acct-mini-name">User</span>
+        </button>
+      </div>
+
+      <div class="login-bottom-right">
+        <button class="login-icon-btn" id="login-net-btn" title="Internet access"></button>
+        <button class="login-icon-btn" id="login-ease-btn" title="Ease of Access"></button>
+        <div class="login-power-wrap">
+          <button class="login-icon-btn" id="login-power-btn" title="Power"></button>
+          <div id="login-power-menu" class="win10-popup-menu login-power-menu hidden">
+            <button data-power="sleep">Sleep</button>
+            <button data-power="shutdown">Shut down</button>
+            <button data-power="restart">Restart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lock curtain that slides up -->
+    <div id="lock-curtain" class="lock-curtain">
+      <div class="lock-spotlight-badge" id="lock-spotlight-badge">
+        <span class="spotlight-cam" data-glyph="pictures"></span>
+        <span>Like what you see?</span>
+      </div>
+      <div class="lock-bottom-left">
+        <div id="lock-time" class="lock-time">18:00</div>
+        <div id="lock-date" class="lock-date">Saturday, November 21</div>
+        <div class="lock-status-icons" id="lock-status-icons"></div>
+      </div>
+      <div class="lock-hint">Click, swipe up, or press any key to sign in</div>
+    </div>
+  </div>
+
+  <!-- 5. MAIN DESKTOP SHELL -->
+  <div id="os-shell" class="os-shell">
+    <!-- Wallpaper -->
+    <div id="desktop-wallpaper" class="desktop-wallpaper"></div>
+
+    <!-- Desktop Icons & Selection Area -->
+    <div id="desktop-area" class="desktop-area">
+      <div id="desktop-icons" class="desktop-icons"></div>
+      <div id="selection-marquee" class="selection-marquee hidden"></div>
+    </div>
+
+    <!-- Aero Snap Ghost Preview -->
+    <div id="snap-preview" class="snap-preview hidden"></div>
+
+    <!-- Windows Container -->
+    <div id="windows-layer" class="windows-layer"></div>
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- START MENU (Authentic 3-Column Windows 10) -->
+    <div id="start-menu" class="start-menu acrylic hidden" role="dialog" aria-label="Start Menu">
+      <!-- Left Rail -->
+      <div id="start-rail" class="start-rail">
+        <div class="start-rail-top">
+          <button class="start-rail-btn" id="start-rail-toggle" title="Expand">
+            <span class="rail-icon" data-glyph="hamburger"></span>
+            <span class="rail-label">START</span>
+          </button>
+        </div>
+        <div class="start-rail-bottom">
+          <button class="start-rail-btn" id="start-user-btn" title="User">
+            <span class="rail-avatar" id="start-rail-avatar"></span>
+            <span class="rail-label" id="start-rail-username">User</span>
+          </button>
+          <button class="start-rail-btn" data-start-folder="C:\Users\User\Documents" title="Documents">
+            <span class="rail-icon" data-glyph="doc"></span>
+            <span class="rail-label">Documents</span>
+          </button>
+          <button class="start-rail-btn" data-start-folder="C:\Users\User\Pictures" title="Pictures">
+            <span class="rail-icon" data-glyph="pictures"></span>
+            <span class="rail-label">Pictures</span>
+          </button>
+          <button class="start-rail-btn" data-launch-app="settings" title="Settings">
+            <span class="rail-icon" data-glyph="settings"></span>
+            <span class="rail-label">Settings</span>
+          </button>
+          <button class="start-rail-btn" id="start-power-btn" title="Power">
+            <span class="rail-icon" data-glyph="power"></span>
+            <span class="rail-label">Power</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Start Power Popup -->
+      <div id="start-power-menu" class="win10-popup-menu start-sub-popup hidden">
+        <button data-power="sleep"><span class="pm-icon" data-glyph="sleep"></span>Sleep</button>
+        <button data-power="shutdown"><span class="pm-icon" data-glyph="power"></span>Shut down</button>
+        <button data-power="restart"><span class="pm-icon" data-glyph="restart"></span>Restart</button>
+      </div>
+
+      <!-- Start User Popup -->
+      <div id="start-user-menu" class="win10-popup-menu start-sub-popup hidden">
+        <button data-user-action="account">Change account settings</button>
+        <button data-user-action="lock">Lock</button>
+        <button data-user-action="signout">Sign out</button>
+      </div>
+
+      <!-- Middle Column: All Apps List -->
+      <div class="start-apps-col">
+        <div id="start-apps-list" class="start-apps-list"></div>
+        <div id="start-letter-jump" class="start-letter-jump hidden"></div>
+      </div>
+
+      <!-- Right Column: Live Tiles -->
+      <div class="start-tiles-col" id="start-tiles-col"></div>
+    </div>
+
+    <!-- SEARCH PANEL -->
+    <div id="search-panel" class="search-panel acrylic hidden" role="dialog" aria-label="Search">
+      <div class="search-tabs">
+        <button class="search-tab active" data-filter="all">All</button>
+        <button class="search-tab" data-filter="apps">Apps</button>
+        <button class="search-tab" data-filter="documents">Documents</button>
+        <button class="search-tab" data-filter="settings">Settings</button>
+      </div>
+      <div id="search-body" class="search-body"></div>
+    </div>
+
+    <!-- ACTION CENTER (Right Sidebar) -->
+    <div id="action-center" class="action-center acrylic hidden" role="dialog" aria-label="Action Center">
+      <div class="ac-header">
+        <button id="ac-manage-btn" class="ac-link-btn">Manage notifications</button>
+        <button id="ac-clear-btn" class="ac-link-btn">Clear all notifications</button>
+      </div>
+      <div id="ac-notifications" class="ac-notifications"></div>
+      <div class="ac-quick-section">
+        <div class="ac-quick-header">
+          <button id="ac-collapse-btn" class="ac-link-btn">Collapse</button>
+        </div>
+        <div id="ac-quick-grid" class="ac-quick-grid"></div>
+        <div class="ac-brightness-row">
+          <span class="ac-bright-icon" data-glyph="brightness"></span>
+          <input type="range" id="ac-brightness-slider" min="30" max="100" value="100" class="win10-slider" />
+        </div>
+      </div>
+    </div>
+
+    <!-- TASKBAR FLYOUTS -->
+    <!-- Calendar & Clock Flyout -->
+    <div id="calendar-flyout" class="taskbar-flyout calendar-flyout acrylic hidden">
+      <div class="cal-clock-header">
+        <div id="cal-big-time" class="cal-big-time">6:00:00 <span class="cal-ampm">PM</span></div>
+        <div id="cal-big-date" class="cal-big-date">Saturday, November 21, 2026</div>
+      </div>
+      <div class="cal-divider"></div>
+      <div class="cal-nav-row">
+        <span id="cal-month-label" class="cal-month-label">November 2026</span>
+        <div class="cal-nav-btns">
+          <button id="cal-prev-btn" title="Previous month">⌃</button>
+          <button id="cal-next-btn" title="Next month">⌄</button>
+        </div>
+      </div>
+      <div class="cal-weekdays">
+        <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+      </div>
+      <div id="cal-days-grid" class="cal-days-grid"></div>
+      <div class="cal-divider"></div>
+      <div class="cal-agenda">
+        <div id="cal-selected-label" class="cal-selected-label">Today</div>
+        <div id="cal-events-list" class="cal-events-list">No events</div>
+        <div class="cal-add-event-row">
+          <input type="text" id="cal-event-input" placeholder="Add an event or reminder" />
+          <button id="cal-event-add-btn">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Volume Flyout -->
+    <div id="volume-flyout" class="taskbar-flyout volume-flyout acrylic hidden">
+      <div class="flyout-device-title">Speakers (Realtek High Definition Audio)</div>
+      <div class="volume-control-row">
+        <button id="vol-mute-btn" class="vol-mute-btn" title="Mute"></button>
+        <input type="range" id="vol-slider" min="0" max="100" value="72" class="win10-slider" />
+        <span id="vol-pct" class="vol-pct">72</span>
+      </div>
+    </div>
+
+    <!-- Network Flyout -->
+    <div id="network-flyout" class="taskbar-flyout network-flyout acrylic hidden">
+      <div id="wifi-list" class="wifi-list"></div>
+      <div class="net-footer">
+        <button class="net-settings-link" id="net-open-settings">Network &amp; Internet settings</button>
+        <div class="net-quick-tiles">
+          <button class="net-tile active" id="net-wifi-toggle">
+            <span class="nt-icon" data-glyph="wifi"></span>
+            <span>Wi-Fi</span>
+          </button>
+          <button class="net-tile" id="net-airplane-toggle">
+            <span class="nt-icon" data-glyph="airplane"></span>
+            <span>Airplane mode</span>
+          </button>
+          <button class="net-tile" id="net-hotspot-toggle">
+            <span class="nt-icon" data-glyph="hotspot"></span>
+            <span>Mobile hotspot</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Battery Flyout -->
+    <div id="battery-flyout" class="taskbar-flyout battery-flyout acrylic hidden">
+      <div class="bat-top">
+        <span class="bat-big-icon" data-glyph="battery"></span>
+        <div class="bat-info">
+          <div class="bat-pct-row"><span id="bat-pct-val">94%</span></div>
+          <div class="bat-sub" id="bat-status-sub">5 hr 18 min remaining</div>
+        </div>
+      </div>
+      <div class="bat-slider-section">
+        <div class="bat-mode-label">Power mode (on battery): <strong id="bat-mode-name">Better battery</strong></div>
+        <input type="range" id="bat-mode-slider" min="0" max="3" value="1" class="win10-slider" />
+        <div class="bat-slider-labels">
+          <span>Best battery life</span>
+          <span>Best performance</span>
+        </div>
+      </div>
+      <div class="bat-footer">
+        <button id="bat-settings-link" class="net-settings-link">Battery settings</button>
+      </div>
+    </div>
+
+    <!-- Hidden Tray Icons Flyout -->
+    <div id="tray-overflow-flyout" class="taskbar-flyout tray-overflow-flyout acrylic hidden">
+      <button class="overflow-tray-item" data-toast="Windows Security|No actions needed. Your device is protected." title="Windows Security - No actions needed"></button>
+      <button class="overflow-tray-item" data-toast="Bluetooth|Bluetooth is turned on and ready." title="Bluetooth Devices"></button>
+      <button class="overflow-tray-item" data-toast="OneDrive|OneDrive - Up to date." title="OneDrive - Up to date"></button>
+      <button class="overflow-tray-item" data-toast="Safely Remove Hardware|No removable drives detected." title="Safely Remove Hardware"></button>
+    </div>
+
+    <!-- Language Flyout -->
+    <div id="lang-flyout" class="taskbar-flyout lang-flyout acrylic hidden">
+      <button class="lang-opt active" data-lang="ENG">
+        <span class="lang-code">ENG</span>
+        <span class="lang-detail"><strong>English (United States)</strong><small>US keyboard</small></span>
+      </button>
+      <button class="lang-opt" data-lang="UK">
+        <span class="lang-code">ENG</span>
+        <span class="lang-detail"><strong>English (United Kingdom)</strong><small>United Kingdom keyboard</small></span>
+      </button>
+      <button class="lang-opt" data-lang="INTL">
+        <span class="lang-code">ENG</span>
+        <span class="lang-detail"><strong>English (International)</strong><small>US-International keyboard</small></span>
+      </button>
+    </div>
+
+    <!-- Taskbar Thumbnail Preview Popup -->
+    <div id="taskbar-preview" class="taskbar-preview acrylic hidden"></div>
+
+    <!-- TASKBAR (40px Windows 10) -->
+    <div id="taskbar" class="taskbar acrylic">
+      <div class="tb-left">
+        <button id="tb-start-btn" class="tb-btn tb-start-btn" title="Start" aria-label="Start">
+          <svg viewBox="0 0 88 88" width="16" height="16">
+            <path fill="currentColor" d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349l-.011 41.34-47.318-6.678-.066-34.739z"/>
+          </svg>
+        </button>
+
+        <!-- Search Box / Icon -->
+        <div id="tb-search-wrap" class="tb-search-wrap mode-box">
+          <span class="tb-search-icon" data-glyph="search"></span>
+          <input type="text" id="tb-search-input" class="tb-search-input" placeholder="Type here to search" autocomplete="off" />
+        </div>
+        <button id="tb-search-icon-btn" class="tb-btn hidden" title="Search">
+          <span data-glyph="search"></span>
+        </button>
+
+        <!-- Task View Button -->
+        <button id="tb-taskview-btn" class="tb-btn" title="Task View">
+          <span data-glyph="taskview"></span>
+        </button>
+      </div>
+
+      <!-- Running & Pinned Apps -->
+      <div id="tb-apps" class="tb-apps"></div>
+
+      <!-- System Tray -->
+      <div class="tb-tray">
+        <button id="tray-overflow-btn" class="tb-tray-btn" title="Show hidden icons">
+          <span data-glyph="chevronUp"></span>
+        </button>
+        <button id="tray-battery-btn" class="tb-tray-btn" title="94% available">
+          <span data-glyph="battery"></span>
+        </button>
+        <button id="tray-network-btn" class="tb-tray-btn" title="HomeWiFi-5G&#10;Internet access">
+          <span data-glyph="wifi"></span>
+        </button>
+        <button id="tray-volume-btn" class="tb-tray-btn" title="Speakers: 72%">
+          <span data-glyph="volumeHigh"></span>
+        </button>
+        <button id="tray-lang-btn" class="tb-tray-btn tb-lang-btn" title="Keyboard layout">ENG</button>
+        <button id="tray-clock-btn" class="tb-tray-btn tb-clock-btn" title="Clock">
+          <span id="tb-clock-time">6:00 PM</span>
+          <span id="tb-clock-date">11/21/2026</span>
+        </button>
+        <button id="tray-ac-btn" class="tb-tray-btn tb-ac-btn" title="Action Center">
+          <span data-glyph="actionCenter"></span>
+          <span id="tray-ac-badge" class="tray-ac-badge hidden">1</span>
+        </button>
+        <button id="tb-show-desktop" class="tb-show-desktop" title="Show desktop"></button>
+      </div>
+    </div>
+
+    <!-- TASK VIEW + VIRTUAL DESKTOPS OVERLAY -->
+    <div id="task-view-overlay" class="task-view-overlay hidden">
+      <div class="tv-desktops-bar">
+        <div id="tv-desktops-list" class="tv-desktops-list"></div>
+        <button id="tv-new-desktop-btn" class="tv-new-desktop-btn">+ New desktop</button>
+      </div>
+      <div id="tv-windows-grid" class="tv-windows-grid"></div>
+      <div class="tv-empty-hint hidden" id="tv-empty-hint">No open windows on this desktop</div>
+    </div>
+
+    <!-- ALT+TAB SWITCHER OVERLAY -->
+    <div id="alttab-overlay" class="alttab-overlay acrylic hidden">
+      <div id="alttab-list" class="alttab-list"></div>
+    </div>
+
+    <!-- GLOBAL CONTEXT MENU -->
+    <div id="context-menu" class="context-menu hidden"></div>
+
+    <!-- WIN+X POWER USER MENU -->
+    <div id="winx-menu" class="winx-menu hidden"></div>
+
+    <!-- SYSTEM MODAL LAYER (Run Dialog, Winver, Properties, Confirmations) -->
+    <div id="system-modal-layer" class="system-modal-layer"></div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

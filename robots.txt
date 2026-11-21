@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://its-zain-dev.github.io/windows-10-os/sitemap.xml

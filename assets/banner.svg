@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Windows 10 Web OS — Interactive Browser Desktop Simulator">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030917"/>
+      <stop offset="52%" stop-color="#061a3a"/>
+      <stop offset="100%" stop-color="#03122b"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="74%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#00ADEF" stop-opacity="0.45"/>
+      <stop offset="48%" stop-color="#0078D7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0078D7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="16%" cy="22%" r="36%">
+      <stop offset="0%" stop-color="#0078D7" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0078D7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0%" stop-color="#38c6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38c6ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#00ADEF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5ce1ff"/>
+      <stop offset="55%" stop-color="#00ADEF"/>
+      <stop offset="100%" stop-color="#0078D7"/>
+    </linearGradient>
+    <linearGradient id="ctaGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0078D7"/>
+      <stop offset="100%" stop-color="#00ADEF"/>
+    </linearGradient>
+    <linearGradient id="screenBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#061c3d"/>
+      <stop offset="60%" stop-color="#0b3a78"/>
+      <stop offset="100%" stop-color="#020c1f"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="frameClip">
+      <rect x="0" y="0" width="1200" height="420" rx="14"/>
+    </clipPath>
+    <clipPath id="previewClip">
+      <rect x="650" y="50" width="500" height="320" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frameClip)">
+    <!-- Deep Windows 10 Hero Background -->
+    <rect width="1200" height="420" fill="url(#bg)"/>
+    <rect width="1200" height="420" fill="url(#glow1)"/>
+    <rect width="1200" height="420" fill="url(#glow2)"/>
+
+    <!-- Volumetric Hero Light Beams -->
+    <polygon points="560,0 790,0 1160,420 820,420" fill="url(#beam)"/>
+    <polygon points="400,0 530,0 850,420 670,420" fill="url(#beam)" opacity="0.55"/>
+
+    <!-- Subtle Fluent Grid Lines -->
+    <g stroke="#ffffff" stroke-opacity="0.035" stroke-width="1">
+      <line x1="0" y1="105" x2="1200" y2="105"/>
+      <line x1="0" y1="210" x2="1200" y2="210"/>
+      <line x1="0" y1="315" x2="1200" y2="315"/>
+      <line x1="300" y1="0" x2="300" y2="420"/>
+      <line x1="600" y1="0" x2="600" y2="420"/>
+      <line x1="900" y1="0" x2="900" y2="420"/>
+    </g>
+
+    <!-- Left Content Column -->
+    <g transform="translate(58, 58)">
+      <!-- Glowing Windows 10 4-Pane Logo -->
+      <g transform="translate(0, 6)" filter="url(#softGlow)">
+        <path fill="url(#logoGrad)" transform="scale(0.62)" d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349l-.011 41.34-47.318-6.678-.066-34.739z"/>
+      </g>
+
+      <!-- Eyebrow Badge -->
+      <rect x="74" y="10" width="212" height="24" rx="2" fill="#0078D7" fill-opacity="0.22" stroke="#00ADEF" stroke-opacity="0.5" stroke-width="1"/>
+      <circle cx="88" cy="22" r="4" fill="#38ef7d"/>
+      <text x="100" y="26.5" fill="#bfe9ff" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.9">LIVE INTERACTIVE WEB OS</text>
+
+      <!-- Version Tag -->
+      <text x="74" y="55" fill="#7aaad4" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="13" font-weight="400">Version 22H2 • Build 19045 • Zero Dependencies</text>
+
+      <!-- Main Title -->
+      <text x="0" y="126" fill="#ffffff" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="52" font-weight="700" letter-spacing="-0.8">Windows 10 OS</text>
+
+      <!-- Subtitle -->
+      <text x="2" y="164" fill="#c7dcf2" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="18" font-weight="400">100% faithful Windows 10 desktop experience in your browser.</text>
+      <text x="2" y="189" fill="#92b5d8" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="15.5" font-weight="400">Start Menu, Live Tiles, Aero Snap, Virtual Desktops &amp; 10 Core Apps.</text>
+
+      <!-- Feature Pills -->
+      <g transform="translate(0, 214)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="12" font-weight="600">
+        <rect x="0" y="0" width="114" height="28" rx="2" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.16"/>
+        <text x="57" y="18.5" text-anchor="middle" fill="#e6f2ff">Fluent Acrylic</text>
+
+        <rect x="124" y="0" width="118" height="28" rx="2" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.16"/>
+        <text x="183" y="18.5" text-anchor="middle" fill="#e6f2ff">10 Built-in Apps</text>
+
+        <rect x="252" y="0" width="120" height="28" rx="2" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.16"/>
+        <text x="312" y="18.5" text-anchor="middle" fill="#e6f2ff">Persistent VFS</text>
+
+        <rect x="382" y="0" width="118" height="28" rx="2" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.16"/>
+        <text x="441" y="18.5" text-anchor="middle" fill="#e6f2ff">Pure Vanilla JS</text>
+      </g>
+
+      <!-- Clickable CTA Visual Button -->
+      <g transform="translate(0, 264)">
+        <rect x="0" y="0" width="234" height="42" rx="2" fill="url(#ctaGrad)"/>
+        <rect x="0.5" y="0.5" width="233" height="41" rx="2" fill="none" stroke="#8be0ff" stroke-opacity="0.45"/>
+        <text x="117" y="26.5" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="14.5" font-weight="600">Try Windows 10 Online  →</text>
+
+        <text x="252" y="26" fill="#7aaad4" font-family="'Consolas', 'Courier New', monospace" font-size="12.5">its-zain-dev.github.io/windows-10-os</text>
+      </g>
+    </g>
+
+    <!-- Right Interactive Desktop Preview Mockup -->
+    <g>
+      <!-- Outer Monitor Glass Border -->
+      <rect x="646" y="46" width="508" height="328" rx="6" fill="#000000" fill-opacity="0.45" stroke="#48b8ff" stroke-opacity="0.35" stroke-width="1.5"/>
+
+      <g clip-path="url(#previewClip)">
+        <!-- Desktop Hero Wallpaper -->
+        <rect x="650" y="50" width="500" height="320" fill="url(#screenBg)"/>
+        <polygon points="880,100 1070,74 1070,295 880,270" fill="#00ADEF" fill-opacity="0.22"/>
+        <polygon points="910,115 1030,98 1030,192 910,194" fill="#38ccff" fill-opacity="0.28"/>
+        <polygon points="910,202 1030,204 1030,278 910,258" fill="#008ae6" fill-opacity="0.24"/>
+
+        <!-- Desktop Icons (Left Column) -->
+        <g transform="translate(664, 64)">
+          <rect x="4" y="0" width="20" height="16" fill="#52b8ff" rx="1"/>
+          <rect x="8" y="16" width="12" height="3" fill="#a9d8ff"/>
+          <text x="14" y="30" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8.5">This PC</text>
+
+          <rect x="5" y="42" width="18" height="18" fill="#8899aa" rx="1"/>
+          <rect x="3" y="40" width="22" height="3" fill="#ccd8e6"/>
+          <text x="14" y="72" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8.5">Recycle Bin</text>
+
+          <rect x="4" y="84" width="20" height="16" fill="#f7c948" rx="1"/>
+          <text x="14" y="112" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8.5">Documents</text>
+        </g>
+
+        <!-- Simulated Start Menu (Acrylic Dark + Live Tiles) -->
+        <g transform="translate(650, 128)">
+          <rect x="0" y="0" width="218" height="214" fill="#181818" fill-opacity="0.93"/>
+          <rect x="0" y="0" width="218" height="214" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+          <!-- Left Rail -->
+          <rect x="0" y="0" width="24" height="214" fill="#111111" fill-opacity="0.7"/>
+          <rect x="7" y="12" width="10" height="1.5" fill="#cccccc"/>
+          <rect x="7" y="16" width="10" height="1.5" fill="#cccccc"/>
+          <rect x="7" y="20" width="10" height="1.5" fill="#cccccc"/>
+          <circle cx="12" cy="176" r="5" fill="#0078D7"/>
+          <circle cx="12" cy="198" r="4.5" fill="none" stroke="#cccccc" stroke-width="1.5"/>
+
+          <!-- App List -->
+          <g transform="translate(32, 12)" fill="#e8e8e8" font-family="'Segoe UI', sans-serif" font-size="8.5">
+            <text x="0" y="8" fill="#999999" font-size="7.5">A - Z</text>
+            <rect x="0" y="15" width="10" height="10" fill="#0078D7"/><text x="15" y="23">Calculator</text>
+            <rect x="0" y="31" width="10" height="10" fill="#111111" stroke="#666"/><text x="15" y="39">Command Prompt</text>
+            <rect x="0" y="47" width="10" height="10" fill="#f7c948"/><text x="15" y="55">File Explorer</text>
+            <rect x="0" y="63" width="10" height="10" fill="#00a4ef"/><text x="15" y="71">Microsoft Edge</text>
+            <rect x="0" y="79" width="10" height="10" fill="#2db84c"/><text x="15" y="87">Minesweeper</text>
+            <rect x="0" y="95" width="10" height="10" fill="#5ec2e6"/><text x="15" y="103">Notepad</text>
+            <rect x="0" y="111" width="10" height="10" fill="#e86f38"/><text x="15" y="119">Paint</text>
+            <rect x="0" y="127" width="10" height="10" fill="#3a86ff"/><text x="15" y="135">Photos</text>
+            <rect x="0" y="143" width="10" height="10" fill="#6b7280"/><text x="15" y="151">Settings</text>
+            <rect x="0" y="159" width="10" height="10" fill="#0096c7"/><text x="15" y="167">Task Manager</text>
+          </g>
+
+          <!-- Live Tiles Grid -->
+          <g transform="translate(124, 14)">
+            <text x="0" y="6" fill="#cccccc" font-family="'Segoe UI', sans-serif" font-size="7.5">Productivity</text>
+            <!-- Wide Weather / Edge Tile -->
+            <rect x="0" y="12" width="84" height="40" fill="#0078D7"/>
+            <text x="7" y="30" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700">72°</text>
+            <text x="7" y="44" fill="#d0ecff" font-family="'Segoe UI', sans-serif" font-size="7.5">Weather • Sunny</text>
+
+            <!-- Medium Tiles -->
+            <rect x="0" y="56" width="40" height="40" fill="#00897b"/>
+            <text x="6" y="89" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="7">Explorer</text>
+
+            <rect x="44" y="56" width="40" height="40" fill="#0063B1"/>
+            <text x="50" y="89" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="7">Edge</text>
+
+            <rect x="0" y="100" width="40" height="40" fill="#5c2d91"/>
+            <text x="6" y="133" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="7">Photos</text>
+
+            <rect x="44" y="100" width="40" height="40" fill="#107c10"/>
+            <text x="48" y="133" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="7">Settings</text>
+
+            <!-- Wide Calendar Tile -->
+            <rect x="0" y="144" width="84" height="40" fill="#2b579a"/>
+            <text x="7" y="164" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">Windows 10</text>
+            <text x="7" y="177" fill="#c7dcf2" font-family="'Segoe UI', sans-serif" font-size="7.5">Live Tiles Ready</text>
+          </g>
+        </g>
+
+        <!-- Open File Explorer Window (Sharp 0px Win10 Chrome!) -->
+        <g transform="translate(888, 74)">
+          <rect x="0" y="0" width="246" height="176" fill="#191919" stroke="#5a5a5a" stroke-width="1"/>
+          <!-- Titlebar -->
+          <rect x="0" y="0" width="246" height="22" fill="#000000"/>
+          <rect x="8" y="6" width="11" height="9" fill="#f7c948"/>
+          <text x="24" y="14.5" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="9">This PC — File Explorer</text>
+          <!-- Caption Buttons -->
+          <line x1="194" y1="11" x2="202" y2="11" stroke="#cccccc" stroke-width="1"/>
+          <rect x="212" y="7" width="8" height="8" fill="none" stroke="#cccccc" stroke-width="1"/>
+          <rect x="226" y="0" width="20" height="22" fill="#e81123"/>
+          <line x1="232" y1="7" x2="240" y2="15" stroke="#ffffff" stroke-width="1.2"/>
+          <line x1="240" y1="7" x2="232" y2="15" stroke="#ffffff" stroke-width="1.2"/>
+
+          <!-- Address Bar -->
+          <rect x="8" y="28" width="230" height="16" fill="#242424" stroke="#3c3c3c"/>
+          <text x="14" y="39" fill="#cccccc" font-family="'Segoe UI', sans-serif" font-size="8">This PC  &gt;  Local Disk (C:)  &gt;  Users</text>
+
+          <!-- Sidebar + Content -->
+          <rect x="1" y="50" width="60" height="125" fill="#1f1f1f"/>
+          <g fill="#bbbbbb" font-family="'Segoe UI', sans-serif" font-size="7.5">
+            <text x="8" y="64">Quick access</text>
+            <text x="8" y="79" fill="#ffffff">This PC</text>
+            <text x="8" y="94">Desktop</text>
+            <text x="8" y="109">Documents</text>
+            <text x="8" y="124">Pictures</text>
+            <text x="8" y="139">Downloads</text>
+          </g>
+
+          <!-- Drive C: Storage Bar -->
+          <text x="72" y="65" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8.5" font-weight="600">Devices and drives (1)</text>
+          <rect x="72" y="74" width="154" height="36" fill="#252525" stroke="#3a3a3a"/>
+          <rect x="80" y="82" width="18" height="14" fill="#88a4be"/>
+          <text x="106" y="88" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8">Local Disk (C:)</text>
+          <rect x="106" y="93" width="110" height="7" fill="#3a3a3a"/>
+          <rect x="106" y="93" width="48" height="7" fill="#0078D7"/>
+          <text x="106" y="107" fill="#999999" font-family="'Segoe UI', sans-serif" font-size="6.8">142 GB free of 256 GB</text>
+
+          <!-- Folder Tiles -->
+          <rect x="72" y="122" width="46" height="40" fill="#222222"/>
+          <rect x="84" y="129" width="22" height="16" fill="#f7c948"/>
+          <text x="95" y="156" text-anchor="middle" fill="#dddddd" font-family="'Segoe UI', sans-serif" font-size="7">Desktop</text>
+
+          <rect x="125" y="122" width="46" height="40" fill="#222222"/>
+          <rect x="137" y="129" width="22" height="16" fill="#f7c948"/>
+          <text x="148" y="156" text-anchor="middle" fill="#dddddd" font-family="'Segoe UI', sans-serif" font-size="7">Pictures</text>
+
+          <rect x="178" y="122" width="46" height="40" fill="#222222"/>
+          <rect x="190" y="129" width="22" height="16" fill="#f7c948"/>
+          <text x="201" y="156" text-anchor="middle" fill="#dddddd" font-family="'Segoe UI', sans-serif" font-size="7">Docs</text>
+        </g>
+
+        <!-- Open Fluent Calculator Overlay -->
+        <g transform="translate(1018, 178)">
+          <rect x="0" y="0" width="116" height="156" fill="#1f1f1f" stroke="#0078D7" stroke-width="1"/>
+          <text x="8" y="14" fill="#cccccc" font-family="'Segoe UI', sans-serif" font-size="7.5">Calculator</text>
+          <text x="108" y="48" text-anchor="end" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="600">2,026</text>
+          <!-- Calc Keypad Grid -->
+          <g fill="#2d2d2d">
+            <rect x="6" y="60" width="24" height="18"/><rect x="33" y="60" width="24" height="18"/><rect x="60" y="60" width="24" height="18"/><rect x="87" y="60" width="23" height="18" fill="#252525"/>
+            <rect x="6" y="81" width="24" height="18"/><rect x="33" y="81" width="24" height="18"/><rect x="60" y="81" width="24" height="18"/><rect x="87" y="81" width="23" height="18" fill="#252525"/>
+            <rect x="6" y="102" width="24" height="18"/><rect x="33" y="102" width="24" height="18"/><rect x="60" y="102" width="24" height="18"/><rect x="87" y="102" width="23" height="18" fill="#252525"/>
+            <rect x="6" y="123" width="24" height="18"/><rect x="33" y="123" width="24" height="18"/><rect x="60" y="123" width="24" height="18"/><rect x="87" y="123" width="23" height="18" fill="#0078D7"/>
+          </g>
+          <g fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8.5" text-anchor="middle">
+            <text x="18" y="72">7</text><text x="45" y="72">8</text><text x="72" y="72">9</text><text x="98" y="72">×</text>
+            <text x="18" y="93">4</text><text x="45" y="93">5</text><text x="72" y="93">6</text><text x="98" y="93">−</text>
+            <text x="18" y="114">1</text><text x="45" y="114">2</text><text x="72" y="114">3</text><text x="98" y="114">+</text>
+            <text x="18" y="135">±</text><text x="45" y="135">0</text><text x="72" y="135">.</text><text x="98" y="135">=</text>
+          </g>
+        </g>
+
+        <!-- Authentic 40px-Proportioned Windows 10 Taskbar -->
+        <g transform="translate(650, 342)">
+          <rect x="0" y="0" width="500" height="28" fill="#101010" fill-opacity="0.94"/>
+          <line x1="0" y1="0" x2="500" y2="0" stroke="#ffffff" stroke-opacity="0.14"/>
+
+          <!-- Start Icon -->
+          <rect x="0" y="0" width="32" height="28" fill="#ffffff" fill-opacity="0.1"/>
+          <path fill="#ffffff" transform="translate(10, 8) scale(0.14)" d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349l-.011 41.34-47.318-6.678-.066-34.739z"/>
+
+          <!-- Authentic White Win10 Search Box -->
+          <rect x="34" y="3" width="128" height="22" fill="#ffffff"/>
+          <circle cx="45" cy="13" r="4" fill="none" stroke="#444444" stroke-width="1.3"/>
+          <line x1="48" y1="16" x2="51" y2="19" stroke="#444444" stroke-width="1.3"/>
+          <text x="58" y="17" fill="#555555" font-family="'Segoe UI', sans-serif" font-size="8.5">Type here to search</text>
+
+          <!-- Pinned & Running App Indicators -->
+          <g transform="translate(174, 0)">
+            <!-- Explorer (Active underline) -->
+            <rect x="0" y="0" width="28" height="28" fill="#ffffff" fill-opacity="0.12"/>
+            <rect x="8" y="8" width="12" height="10" fill="#f7c948"/>
+            <rect x="2" y="26" width="24" height="2" fill="#429ce3"/>
+
+            <!-- Edge -->
+            <circle cx="44" cy="14" r="6" fill="#00a4ef"/>
+            <!-- Notepad -->
+            <rect x="64" y="7" width="11" height="13" fill="#5ec2e6"/>
+            <!-- Calculator (Active) -->
+            <rect x="84" y="0" width="28" height="28" fill="#ffffff" fill-opacity="0.08"/>
+            <rect x="93" y="7" width="10" height="13" fill="#0078D7"/>
+            <rect x="88" y="26" width="20" height="2" fill="#429ce3"/>
+            <!-- CMD -->
+            <rect x="120" y="8" width="12" height="10" fill="#222222" stroke="#aaaaaa" stroke-width="0.8"/>
+          </g>
+
+          <!-- System Tray & Clock -->
+          <g transform="translate(422, 6)" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="7.5">
+            <text x="0" y="10" fill="#cccccc">ENG</text>
+            <text x="26" y="7">6:00 PM</text>
+            <text x="22" y="16" fill="#cccccc" font-size="6.8">11/21/2026</text>
+          </g>
+          <line x1="494" y1="0" x2="494" y2="28" stroke="#ffffff" stroke-opacity="0.22"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Subtle Outer Frame Border -->
+    <rect x="0.5" y="0.5" width="1199" height="419" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.1"/>
+  </g>
+</svg>

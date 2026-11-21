@@ -1,0 +1,396 @@
+/* ==========================================================================
+   Windows 10 Authentic Theme Tokens & Base Reset
+   ========================================================================== */
+:root {
+  --font-ui: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Cascadia Mono', 'Consolas', 'Courier New', monospace;
+
+  /* Default Windows 10 Accent (#0078D7) */
+  --accent: #0078d7;
+  --accent-rgb: 0, 120, 215;
+  --accent-hover: #1a86dc;
+  --accent-light: #429ce3;
+  --accent-dark: #005a9e;
+  --accent-text: #ffffff;
+
+  /* Taskbar / Start / Action Center (Windows Mode) - Dark Default */
+  --shell-bg: rgba(16, 16, 16, 0.85);
+  --shell-bg-solid: #101010;
+  --shell-panel-bg: rgba(24, 24, 24, 0.86);
+  --shell-panel-solid: #1f1f1f;
+  --shell-text: #ffffff;
+  --shell-text-muted: rgba(255, 255, 255, 0.65);
+  --shell-hover: rgba(255, 255, 255, 0.1);
+  --shell-active: rgba(255, 255, 255, 0.16);
+  --shell-border: rgba(255, 255, 255, 0.12);
+  --shell-divider: rgba(255, 255, 255, 0.14);
+  --shell-tile-bg: rgba(255, 255, 255, 0.08);
+  --shell-quick-bg: rgba(255, 255, 255, 0.1);
+  --shell-quick-hover: rgba(255, 255, 255, 0.18);
+
+  /* Search box on taskbar (authentic Win10 white search box in dark mode) */
+  --tb-search-bg: #ffffff;
+  --tb-search-text: #111111;
+  --tb-search-placeholder: #555555;
+  --tb-search-border: rgba(255, 255, 255, 0.4);
+
+  /* App Mode - Dark Default */
+  --app-bg: #191919;
+  --app-bg-alt: #202020;
+  --app-bg-elevated: #2b2b2b;
+  --app-sidebar: #1f1f1f;
+  --app-surface: #252525;
+  --app-text: #ffffff;
+  --app-text-secondary: #b3b3b3;
+  --app-text-muted: #888888;
+  --app-border: #3a3a3a;
+  --app-hover: rgba(255, 255, 255, 0.08);
+  --app-active: rgba(255, 255, 255, 0.14);
+  --app-input-bg: #1e1e1e;
+  --app-input-border: #555555;
+
+  /* Classic Win32 Chrome (Notepad / Explorer / Taskmgr / Paint) */
+  --titlebar-bg: #000000;
+  --titlebar-inactive-bg: #2b2b2b;
+  --titlebar-text: #ffffff;
+  --titlebar-inactive-text: #aaaaaa;
+  --win-border-active: rgba(90, 90, 90, 0.85);
+  --win-border-inactive: rgba(60, 60, 60, 0.65);
+
+  /* Context Menus */
+  --ctx-bg: #2b2b2b;
+  --ctx-border: #484848;
+  --ctx-text: #ffffff;
+  --ctx-hover: #414141;
+  --ctx-sep: #454545;
+
+  /* Transparency */
+  --acrylic-blur: blur(28px) saturate(160%);
+  --taskbar-height: 40px;
+}
+
+/* Light Windows Mode (Taskbar, Start, Action Center, Flyouts) */
+html[data-win-theme="light"] {
+  --shell-bg: rgba(238, 238, 238, 0.86);
+  --shell-bg-solid: #eeeeee;
+  --shell-panel-bg: rgba(242, 242, 242, 0.88);
+  --shell-panel-solid: #f2f2f2;
+  --shell-text: #000000;
+  --shell-text-muted: rgba(0, 0, 0, 0.62);
+  --shell-hover: rgba(0, 0, 0, 0.08);
+  --shell-active: rgba(0, 0, 0, 0.14);
+  --shell-border: rgba(0, 0, 0, 0.12);
+  --shell-divider: rgba(0, 0, 0, 0.12);
+  --shell-tile-bg: rgba(0, 0, 0, 0.06);
+  --shell-quick-bg: rgba(0, 0, 0, 0.06);
+  --shell-quick-hover: rgba(0, 0, 0, 0.12);
+  --tb-search-bg: #ffffff;
+  --tb-search-text: #111111;
+  --tb-search-placeholder: #555555;
+  --tb-search-border: rgba(0, 0, 0, 0.25);
+}
+
+/* Light App Mode */
+html[data-app-theme="light"] {
+  --app-bg: #ffffff;
+  --app-bg-alt: #f3f3f3;
+  --app-bg-elevated: #e6e6e6;
+  --app-sidebar: #f0f0f0;
+  --app-surface: #f7f7f7;
+  --app-text: #000000;
+  --app-text-secondary: #4a4a4a;
+  --app-text-muted: #767676;
+  --app-border: #d9d9d9;
+  --app-hover: rgba(0, 0, 0, 0.06);
+  --app-active: rgba(0, 0, 0, 0.12);
+  --app-input-bg: #ffffff;
+  --app-input-border: #8a8a8a;
+
+  --titlebar-bg: #ffffff;
+  --titlebar-inactive-bg: #f3f3f3;
+  --titlebar-text: #000000;
+  --titlebar-inactive-text: #777777;
+  --win-border-active: rgba(120, 120, 120, 0.55);
+  --win-border-inactive: rgba(160, 160, 160, 0.45);
+
+  --ctx-bg: #f2f2f2;
+  --ctx-border: #cccccc;
+  --ctx-text: #000000;
+  --ctx-hover: #dadada;
+  --ctx-sep: #d4d4d4;
+}
+
+/* Accent Color on Start, Taskbar & Action Center */
+html[data-accent-shell="true"] {
+  --shell-bg: rgba(var(--accent-rgb), 0.86);
+  --shell-bg-solid: var(--accent-dark);
+  --shell-panel-bg: rgba(var(--accent-rgb), 0.90);
+  --shell-panel-solid: var(--accent-dark);
+  --shell-text: #ffffff;
+  --shell-text-muted: rgba(255, 255, 255, 0.78);
+  --shell-hover: rgba(255, 255, 255, 0.14);
+  --shell-active: rgba(255, 255, 255, 0.24);
+  --shell-border: rgba(255, 255, 255, 0.18);
+  --shell-divider: rgba(255, 255, 255, 0.2);
+}
+
+/* Accent Color on Title Bars & Window Borders */
+html[data-accent-titlebar="true"] {
+  --titlebar-bg: var(--accent);
+  --titlebar-text: #ffffff;
+  --win-border-active: var(--accent);
+}
+
+/* Disable Transparency Effects */
+html[data-transparency="false"] {
+  --acrylic-blur: none;
+  --shell-bg: var(--shell-bg-solid);
+  --shell-panel-bg: var(--shell-panel-solid);
+}
+
+/* Small Taskbar Mode */
+html[data-small-taskbar="true"] {
+  --taskbar-height: 30px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--app-text);
+  background: #000;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input, textarea {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: default;
+  outline: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.acrylic {
+  backdrop-filter: var(--acrylic-blur);
+  -webkit-backdrop-filter: var(--acrylic-blur);
+}
+
+/* Windows 10 Flat Scrollbars */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.45);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.72);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Authentic Windows 10 Range Slider */
+.win10-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: rgba(150, 150, 150, 0.55);
+  outline: none;
+  flex: 1;
+}
+.win10-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 22px;
+  border-radius: 4px;
+  background: var(--accent);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.win10-slider::-webkit-slider-thumb:hover {
+  background: var(--shell-text);
+}
+
+/* Authentic Windows 10 Toggle Switch */
+.win10-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.win10-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.win10-toggle-track {
+  width: 44px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--app-text-secondary);
+  background: transparent;
+  position: relative;
+  transition: background 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+}
+.win10-toggle-track::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--app-text-secondary);
+  top: 3px;
+  left: 3px;
+  transition: transform 0.15s cubic-bezier(0.1, 0.9, 0.2, 1), background 0.15s;
+}
+.win10-toggle input:checked + .win10-toggle-track {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.win10-toggle input:checked + .win10-toggle-track::after {
+  transform: translateX(24px);
+  background: #ffffff;
+}
+
+/* Authentic Windows 10 Dotted Ring Spinner */
+.win10-spinner {
+  position: relative;
+  width: 46px;
+  height: 46px;
+}
+.win10-spinner.small-spinner {
+  width: 26px;
+  height: 26px;
+}
+.win10-spinner .dot {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: rotate(225deg);
+  animation: win10Orbit 4.2s infinite;
+}
+.win10-spinner .dot::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ffffff;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.win10-spinner.small-spinner .dot::after {
+  width: 3.5px;
+  height: 3.5px;
+}
+.win10-spinner .dot:nth-child(2) { animation-delay: 200ms; }
+.win10-spinner .dot:nth-child(3) { animation-delay: 400ms; }
+.win10-spinner .dot:nth-child(4) { animation-delay: 600ms; }
+.win10-spinner .dot:nth-child(5) { animation-delay: 800ms; }
+
+@keyframes win10Orbit {
+  0%   { transform: rotate(225deg); opacity: 1; animation-timing-function: ease-out; }
+  7%   { transform: rotate(345deg); animation-timing-function: linear; }
+  30%  { transform: rotate(455deg); animation-timing-function: ease-in-out; }
+  39%  { transform: rotate(690deg); animation-timing-function: linear; }
+  70%  { transform: rotate(815deg); opacity: 1; animation-timing-function: ease-out; }
+  75%  { transform: rotate(945deg); animation-timing-function: ease-out; }
+  76%  { transform: rotate(945deg); opacity: 0; }
+  100% { transform: rotate(945deg); opacity: 0; }
+}
+
+/* Display Brightness & Night Light Overlays */
+#display-brightness-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  background: #000000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+#display-nightlight-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(255, 136, 30, 0.28);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+/* Visually Hidden Semantic SEO & Screen-Reader Content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Noscript Fallback */
+.noscript-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: #0078d7;
+  color: #ffffff;
+  font-family: var(--font-ui);
+  text-align: center;
+}
+.noscript-screen h1 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.noscript-screen p {
+  max-width: 560px;
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.92;
+}

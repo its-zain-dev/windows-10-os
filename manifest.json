@@ -1,0 +1,37 @@
+{
+  "name": "Windows 10 Online — Interactive Web OS",
+  "short_name": "Windows 10",
+  "description": "100% faithful interactive Windows 10 desktop operating system running directly in your browser with Start Menu, Live Tiles, Aero Snap, Virtual Desktops, Action Center, and 10 working built-in apps.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#000000",
+  "theme_color": "#0078D7",
+  "lang": "en-US",
+  "categories": ["utilities", "productivity", "education", "entertainment"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/hero-dark.jpg",
+      "sizes": "1376x768",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Windows 10 Dark Hero Desktop"
+    },
+    {
+      "src": "assets/lock-cave.jpg",
+      "sizes": "1376x768",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Windows 10 Spotlight Lock Screen"
+    }
+  ]
+}
